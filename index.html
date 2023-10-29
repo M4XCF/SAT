@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloP.css">
+    <title>Formulario SAT</title>
+</head>
+<body>
+    <h1>Formulario SAT</h1>
+    <form action="declara" id="contact_form" action="#" class="declara">
+        <ul>
+            <li>
+                <span class="required_notification">Agregue sus datos</span>
+            </li>
+            <li>
+                <label for="rfc">RFC</label>
+                <input type="text" name="rfc" pattern="[A-Za-z]{10,13}" placeholder="10 A 13 Caracteres" maxlength="13" required>
+            </li>
+            <li>
+                <label for="periodo">Mes</label>
+                <select name="periodo" id="" required>
+                    <option value="">Opcion</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                </select>
+            </li>
+            <li>
+                <label for="fecha">¿Que dia es hoy?</label>
+                <input type="date" name="fecha" min="2022-10-25" max="2023-10-25" value="<?php echo ('Y-M-D')" maxlength="10">
+            </li>
+            <li>
+                <label for="numero">Numero telefonico</label>
+                <input type="tel" name="telefono" placeholder="(Codigo de area) Numero" maxlength="18" minlength="10">
+            </li>
+            <li>
+                <label for="correo">Correo electronico</label>
+                <input type="email" name="email" placeholder="Correo">
+            </li>
+            <li>
+                <label for="correo">Domicilio</label>
+                <input type="text" name="domicilio" placeholder="Domicilio">
+            </li>
+            <li>
+                <button class="submit" type="submit">Enviar</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
